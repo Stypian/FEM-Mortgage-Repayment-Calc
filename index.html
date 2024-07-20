@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="scripts.js"></script>
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body>
+  <main class="mort-calc__main">
+    <section class="mort-calc__cont">
+      <div class="mort-calc__inner">
+        <div class="mort-calc__left">
+          <div class="mort-calc__half-inner mort-calc__half-inner--left">
+            <div class="mort-calc__left-header">
+              <h1 class="mort-calc__h1">Mortgage Calculator</h1>
+              <p class="mort-calc__p mort-calc__p--form mort-calc__p--clear">Clear All</p>
+            </div>   
+            <form class="mort-calc__form">
+              <div class="mort-calc__input-cont">
+                <label class="mort-calc__p mort-calc__p--form" for="mort-calc__amount">Mortgage Amount</label>
+                <div class="mort-calc__input-wrap">
+                  <div class="mort-calc__input-color mort-calc__input-color--one"><p class="mort-calc__p mort-calc__p--color">&#163;</p></div>
+                  <input type="number" class="mort-calc__input mort-calc__input--amount" id="mort-calc__amount" name="mort-calc__amount">
+                </div>
+                <p class="mort-calc__error-message">This field is required</p>
+              </div>
+              <div class="mort-calc__term-rate">
+                <div class="mort-calc__input-cont mort-calc__input-cont--two">
+                  <label class="mort-calc__p mort-calc__p--form" for="mort-calc__term">Mortgage Term</label>
+                  <div class="mort-calc__input-wrap">
+                    <div class="mort-calc__input-color mort-calc__input-color--two"><p class="mort-calc__p mort-calc__p--color">years</p></div>
+                    <input type="number" class="mort-calc__input" id="mort-calc__term" name="mort-calc__term">
+                  </div>
+                  <p class="mort-calc__error-message">This field is required</p>
+                </div>
+                <div class="mort-calc__input-cont mort-calc__input-cont--two">
+                  <label class="mort-calc__p mort-calc__p--form" for="mort-calc__rate">Interest Rate</label>
+                  <div class="mort-calc__input-wrap">
+                    <div class="mort-calc__input-color mort-calc__input-color--two"><p class="mort-calc__p mort-calc__p--color">%</p></div>
+                    <input type="number" class="mort-calc__input" id="mort-calc__rate" name="mort-calc__rate">
+                  </div>
+                  <p class="mort-calc__error-message">This field is required</p>
+                </div>
+              </div>
+              <div class="mort-calc__input-cont">
+                <label class="mort-calc__p mort-calc__p--form">Mortgage Type</label>
+                <label class="mort-calc__input-wrap mort-calc__input-wrap--radios mort-calc__input-wrap--repay">
+                  <input type="radio" class="mort-calc__input-radio" name="mort-calc__pay" value="repayment">
+                  <div class="mort-calc__radio-cover"></div>
+                  <p class="mort-calc__p mort-calc__p--radios">Repayment</p>
+                </label>
+              </div>
+              <div class="mort-calc__input-cont">
+                <label class="mort-calc__input-wrap mort-calc__input-wrap--radios">
+                  <input type="radio" class="mort-calc__input-radio" name="mort-calc__pay" value="interest">
+                  <div class="mort-calc__radio-cover"></div>
+                  <p class="mort-calc__p mort-calc__p--radios">Interest Only</p>
+                </label>
+                <p class="mort-calc__error-message">This field is required</p>
+              </div>
+              <div class="mort-calc__input-cont mort-calc__input-cont--button">
+                <button type="submit" class="mort-calc__submit"><img src="assets/images/icon-calculator.svg" alt="submit form"><p class="mort-calc__p mort-calc__p--submit">Calculate Repayments</p></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      
+        <div class="mort-calc__right">
+          <div class="mort-calc__half-inner mort-calc__half-inner--right mort-calc__normal">
+            <img src="assets/images/illustration-empty.svg" class="mort-calc__mid-icon" alt="results">
+            <h1 class="mort-calc__h1 mort-calc__h1--right">Results shown here</h1>
+            <p class="mort-calc__p mort-calc__p--right">Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+          </div>
+          <div class="mort-calc__half-inner mort-calc__half-inner--right mort-calc__complete">
+            <h1 class="mort-calc__h1 mort-calc__h1--complete">Your Results</h1>
+            <p class="mort-calc__p mort-calc__p--complete">Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayments" again.</p>
+            <div class="mort-calc__view-complete">
+              <div class="mort-calc__view-half mort-calc__view-half--top">
+                <p class="mort-calc__p mort-calc__p--view">Your monthly repayments</p>
+                <h2 class="mort-calc__repay">1,797.44</h2>
+              </div>
+              <div class="mort-calc__view-half">
+                <p class="mort-calc__p mort-calc__p--view">Total you'll repay over the term</p>
+                <h2 class="mort-calc__total">539,322.44</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Ron L</a>.
+  </div>
+</body>
+</html>
